@@ -23,10 +23,10 @@ You can use the `Nav` command to create shortcuts to directories that you visit 
 :Nav to pp                       " navigate to the shortcut
 ```
 
-Note that `Ex` special characters expand as you would expect.
+Note that special characters expand as you would expect.
 ```vim
-:Nav add pp %:h  " create a new shortcut to the current directory
-:Nav to pp       " navigate to the shortcut
+:Nav add pp .  " create a new shortcut to the current directory
+:Nav to pp     " navigate to the shortcut
 ```
 
 You can also manage your shortcuts using `:Nav update` and `:Nav remove`.
