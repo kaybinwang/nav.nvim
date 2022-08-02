@@ -23,6 +23,12 @@ You can use the `Nav` command to create shortcuts to directories that you visit 
 :Nav to pp                       " navigate to the shortcut
 ```
 
+Note that `Ex` special characters expand as you would expect.
+```vim
+:Nav add pp %:h  " create a new shortcut to the current directory
+:Nav to pp       " navigate to the shortcut
+```
+
 You can also manage your shortcuts using `:Nav update` and `:Nav remove`.
 ```vim
 :Nav update pp ~/new/personal/projects  " update the shortcut
@@ -37,7 +43,7 @@ Finally, you can see what shortcuts you have defined by using nav list.
 Please refer to `:help nav` for more documentation on the commands.
 
 ## Configuration
-By default, `:Nav` stores your shortcuts in `~/.config/nav`. However, you can set your own custom directory by setting the `NAV_PATH` environment variable. For example,
+By default, `Nav` stores your shortcuts in `~/.config/nav`. However, you can set your own custom directory by setting the `NAV_PATH` environment variable. For example,
 
 ```bash
 export NAV_PATH=/path/to/shortcuts
